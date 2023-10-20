@@ -20,110 +20,127 @@
         </ul>
     </nav>
 
-    <button><a href="#" type="application/pdf"></a>DOWNLOAD CV</button>
+    <button><a href="./docs/Resume_FabioSantosLeite.pdf" target="_blank">Download CV</a></button>
+
     </header>
 
-    <button>light</button>
 
-    <section class="content" id="sobre">
-    <div>
-    
-        <img src="img/perfil.jpg" alt="perfil">
-    </div>
-    <div>
-        <p>Olá, meu nome é Fabio Santos Leite e sejam bem-vindos</p> <br>
-        <p>Estou no 2º semestre em Analise e Desenvolvimento de Sistemas, 2º semestre e tenho outros cursos de certificados como PHP(Udemy), Javascript, HTML/CSS e lógica de programação.</p>
-        <p>Meus hobbies são jogar video game nas horas livres, ler e ultimamente estou gostando bastante de aprender programação criar software e sites esta sendo bastante divertido.</p>
-        <p>E estou em busca do meu primeiro emprego na área tecnológica fullstack e estou sempre disposto a aprender mais nessa função.</p>
+    <section class="content"  id="sobre">
+        <h1>Sobre Mim</h1>
+
+    <div class="bloco1">
+        <div>
+            <img src="img/perfil.jpg" alt="perfil">
+        </div>
+        
+        <div>
+            <p>Olá, sou Fabio Santos Leite e sejam bem-vindos,
+            Estou no 2º semestre em Analise e Desenvolvimento de Sistemas e tenho outros cursos de certificados como PHP, Javascript, HTML/CSS e lógica de programação.</p>
+            <p>Hobbies de sempre que tanto amo são jogar video game nas horas livres, ler e ultimamente estou gostando bastante de aprender programação como criar softwares e sites esta sendo bastante divertido.</p>
+            <p>E estou em busca do meu primeiro emprego na área tecnológica fullstack e estou sempre disposto a aprender mais nessa função.</p>
+        </div>
     </div>
     </section>
 
-    <section id="formacao">
+    <section class="content"  id="formacao">
 
-    
+    <h1>Formação</h1>
+
+    <div class="bloco2">
+
     <div>
-        <h1 class="title">Formação</h1> <br>
-
+       
+        <br>
         <h2>Escola Estadual Angelo Bortolo</h2>
         <p>Curso: Ensino Médio</p>
         <p>Andamento: concluído</p>
         <p>Ano de Conclusão: 2011</p>
-
         <h2>Centro Universitário Internacional - Uninter</h2>
         <p>Curso: Analise e Desenvolvimento de Sistemas</p>
         <p>Andamento: cursando</p>
         <p>Ano de Conclusão Previsão: 2025</p>
-    </div>
+    </div> <!--Dados de formação-->
 
     <div>
         <img src="./img/diploma.jpg" alt="diploma">
-    </div>
+    </div> <!--Imagem-->
+
+</div> <!--Bloco 2-->
     </section>
 
     <section id="meus_projetos">
         <h1>Meus Projetos</h1>
             <div class="boxes">
-                <div class="size">
+                <div>
                     <h2>Projeto Social</h2>
                     <a href="https://fabiosantos99.github.io/Projeto-Social/"><img src="./img/projeto-social.png" alt="projeto-social" target="_blank"></a>
                     <div>
-                        <button>Descrição</button>
+                        <button  onclick="acessarDesc(1)">Descrição</button>
+                        <div id="descricao"> </div>
                     </div>
                 </div>
                 <div class="size">
                     <h2>Playlist</h2>
                     <a href="https://fabiosantos99.github.io/Interface-Musical/" target="_blank"><img src="./img/playlist.png" alt="projeto-social"></a>
                     <div>
-                        <button>Descrição</button>
+                        <button  onclick="acessarDesc(2)">Descrição</button>
+                        <div id="descricao2"></div>
                     </div>
-            
                 </div>
-                <div class="size">
+
+                <div>
                     <h2>Cofre e Conversor</h2>
                     <a href="" target="_blank"><img src="./img/tela_cofrinho.png" alt="projeto-social" target="_blank"></a>
                     <div>
-                        <button>Descrição</button>
+                        <button  onclick="acessarDesc(3)">Descrição</button>
+                        <div id="descricao3"></div>
                     </div>
             
                 </div>
-                <div class="size">
+                <div>
                     <h2>Cofre e Conversor</h2>
                     <a href="" target="_blank"><img src="./img/tela_cofrinho.png" alt="projeto-social"></a>
                     <div>
                         <button>Descrição</button>
+                        <div></div>
                     </div>
             
                 </div>
-
-            
             </section>
             
-        <section id="contato" style="padding: 150px;">
+        <section class="content" id="contato">
             <h1>Meus Contatos</h1>
             <br>
-        <div id="blocos">
+        <div class="bloco3">
+
             <div>
                 <img src="img/contato_logo.png" id="logo_contato" alt="logo-contato">
-            
-                    <ul>
-                        <li><a href=""><img src="./img/linkedin_logo.png" id="redes" alt="linkedin"></a></li>
-                        <li><a href=""><img src="./img/logo-instagram.jpg" id="redes" alt="Instagram"></a></li>
-                        <li><a href=""><img src="./img/logo-youtube.jpg" id="redes" alt="Youtube"></a></li>
-                    </ul>
             </div>
-            <div >
+
+            <div>
                     <h3><span>E-mail:</span> fsantos93x@gmail.com</h3>
                     <br>
                     <h3><span>Telefone/Whatsapp:</span> (11) 96837-3673 </h3>
             </div>
-        </div>
 
+            <div>
+                <ul>
+                    <li><a href=""><img src="./img/linkedin_logo.png" id="redes" alt="linkedin"></a></li>
+                    <li><a href=""><img src="./img/logo-instagram.jpg" id="redes" alt="Instagram"></a></li>
+                    <li><a href=""><img src="./img/logo-youtube.jpg" id="redes" alt="Youtube"></a></li>
+                </ul>
+            </div>
+           
+               
+        </div>
              
     </section>
 
-
+    <!-- FOOTER -->
     <footer class="rodape">
+        <br>
         <p> &copy; Fabio Santos Leite </p>
+        <br>
     </footer>
 
     <script src="script.js"></script>
