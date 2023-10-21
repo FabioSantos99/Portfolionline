@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/suitcase.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Portfólio Online</title>
 </head>
 <body>
+
+    <!-- CABEÇALH) -->
     <header class="container">
         <h1>
             Fabio Santos Leite
@@ -18,14 +21,16 @@
             <li><a href="#meus_projetos">Meus Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
+        <a href="./docs/Resume_FabioSantosLeite.pdf" target="_blank" class="downloads">Download CV</a>
     </nav>
-
-    <button><a href="./docs/Resume_FabioSantosLeite.pdf" target="_blank">Download CV</a></button>
 
     </header>
 
+    <!-- -------------- FIM do CABEÇALHO --------------- -->
 
-    <section class="content"  id="sobre">
+    <!-- -------------- SOBRE MIM ------------ -->
+
+    <section class="content" id="sobre">
         <h1>Sobre Mim</h1>
 
     <div class="bloco1">
@@ -41,6 +46,8 @@
         </div>
     </div>
     </section>
+
+    <!-- ----------FIM DE SOBRE MIM --------------- -->
 
     <section class="content"  id="formacao">
 
@@ -71,18 +78,22 @@
     <section id="meus_projetos">
         <h1>Meus Projetos</h1>
             <div class="boxes">
-                <div>
-                    <h2>Projeto Social</h2>
-                    <a href="https://fabiosantos99.github.io/Projeto-Social/" target="_blank"><img src="./img/projeto-social.png" alt="projeto-social"></a>
+                <div> 
+                    <div>
+                        <h2>Projeto Social</h2>
+                        <a href="https://fabiosantos99.github.io/Projeto-Social/" target="_blank"><img src="./img/projeto-social.png" alt="projeto-social"></a>
+                    </div>
+                   
                     <div>
                         <button  onclick="acessarDesc(1)">Descrição</button>
                         <div id="descricao"> </div>
                     </div>
-                </div>
-                <div class="size">
+                </div> <!-- Primeiro Projeto-->
+                <div>
                     <h2>Playlist</h2>
-                    <a href="https://fabiosantos99.github.io/Interface-Musical/" target="_blank"><img src="./img/playlist.png" alt="projeto-social"></a>
-                    <div>
+               
+                    <a href="https://fabiosantos99.github.io/Interface-Musical/" target="_blank"><img src="./img/playlist.png" alt="playlist"></a>
+                <div>
                         <button  onclick="acessarDesc(2)">Descrição</button>
                         <div id="descricao2"></div>
                     </div>
@@ -90,19 +101,19 @@
 
                 <div>
                     <h2>Cofre e Conversor</h2>
-                    <a href="https://drive.google.com/drive/folders/1sraI6U4BmNrjxzgTHckwaN0wgZ_FT1N4?usp=sharing" target="_blank"><img src="./img/tela_cofrinho.png" alt="projeto-social" target="_blank"></a>
+                    <div class="position">
+                        <a href="https://drive.google.com/drive/folders/1sraI6U4BmNrjxzgTHckwaN0wgZ_FT1N4?usp=sharing" target="_blank"><img src="./img/tela_cofrinho.png" alt="cofre" target="_blank"></a></div>
                     <div>
-                        <button  onclick="acessarDesc(3)">Descrição</button>
+                        <button onclick="acessarDesc(3)">Descrição</button>
                         <div id="descricao3"></div>
                     </div>
-            
                 </div>
                 <div>
-                    <h2>Cofre e Conversor</h2>
-                    <a href="" target="_blank"><img src="./img/tela_cofrinho.png" alt="projeto-social"></a>
+                    <h2>QR Code Generator</h2>
+                    <a href="https://fabiosantos99.github.io/QrCodeJs/" target="_blank"><img src="./img/qr_image.png" alt="qrcode"></a>
                     <div>
-                        <button>Descrição</button>
-                        <div></div>
+                        <button onclick="acessarDesc(4)">Descrição</button>
+                        <div id="descricao4"></div>
                     </div>
             
                 </div>
@@ -115,22 +126,22 @@
 
             <div>
                 <img src="img/contato_logo.png" id="logo_contato" alt="logo-contato">
+    
             </div>
+
 
             <div>
                     <h3><span>E-mail:</span> fsantos93x@gmail.com</h3>
                     <br>
                     <h3><span>Telefone/Whatsapp:</span> (11) 96837-3673 </h3>
-            </div>
-
-            <div>
+                    
                 <ul>
-                    <li><a href=""><img src="./img/linkedin_logo.png" id="redes" alt="linkedin"></a></li>
-                    <li><a href=""><img src="./img/logo-instagram.jpg" id="redes" alt="Instagram"></a></li>
-                    <li><a href=""><img src="./img/logo-youtube.jpg" id="redes" alt="Youtube"></a></li>
+                    <li><a href="https://www.linkedin.com/in/fabiusthedev/" target="_blank"><img src="./img/linkedin_logo.png" id="redes" alt="linkedin"></a></li>
+                    <li><a href="https://www.instagram.com/fabiusthedev/" target="_blank"><img src="./img/logo-instagram.jpg" id="redes" alt="Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/@fabiusdev" target="_blank"><img src="./img/logo-youtube.jpg" id="redes" alt="Youtube"></a></li>
                 </ul>
-            </div>
-           
+
+            </div>  
                
         </div>
              
