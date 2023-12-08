@@ -378,7 +378,7 @@ span {
 /* SOBRE MIM */
 
 .content {
-    padding-left: 40px;
+    padding-left: 30px;
     padding-top: 100px;
 }
 
@@ -388,6 +388,10 @@ span {
     font-size: 28px;
     line-height: 1.5em;
     padding-top: 30px;
+}
+
+.bloco1 img {
+    width: 90%;
 }
 
 .bloco1 p::first-letter {
@@ -409,11 +413,12 @@ span {
 
 .bloco2 img {
     width: 80%;
+    margin: auto;
 }
 
 /* Meus Projetos */
 #meus_projetos {
-    padding-left: 20px;
+    padding-left: 0px;
     padding-top: 200px;
 
 }
