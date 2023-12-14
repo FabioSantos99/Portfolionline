@@ -4,7 +4,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
+    font-weight: 800;
 }
 
 body {
@@ -13,10 +14,13 @@ body {
     overflow: visible;
 }
 
-h1 {
+.title h1 {
+    position: absolute;
     font-size: 40px;
     color: #4e4eee;
     font-variant: small-caps;
+    top: 40px;
+    left: 20px;
 }
 
 
@@ -255,7 +259,15 @@ h1 {
     width: 60px;
     border-radius: 50%;
     float: inline-start;
-    padding: 5px
+    padding: 5px;
+    transition: .3s;
+}
+
+.bloco3 #redes:hover {
+
+    transform: scaleY(1.5);
+
+
 }
 .bloco3 h3 {
     font-size: 30px;
@@ -266,24 +278,6 @@ span {
     color: rgb(3, 226, 3);
 }
 
-
-
-
-
-/* FOOTER */
-
-.rodape {
-    background-color: #050505;
-    color: #fff;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-}
-
-
-.rodape:hover {
-    background-color: #151515;
-}
 
 
 
@@ -454,10 +448,6 @@ span {
 
 span {
     color: rgb(3, 226, 3);
-}
-
-.rodape {
-    display: none;
 }
 
 }
