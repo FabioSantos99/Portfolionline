@@ -15,12 +15,11 @@ body {
 }
 
 .title h1 {
-    position: absolute;
     font-size: 40px;
     color: #4e4eee;
     font-variant: small-caps;
-    top: 40px;
-    left: 20px;
+    padding-top: 20px;
+    
 }
 
 
@@ -256,10 +255,10 @@ body {
 
 
 .bloco3 #redes {
-    width: 60px;
+    width: 70px;
     border-radius: 50%;
     float: inline-start;
-    padding: 5px;
+    margin: 10px;
     transition: .3s;
 }
 
@@ -439,7 +438,7 @@ span {
     width: 60px;
     border-radius: 50%;
     float: inline-start;
-    padding: 5px
+    padding: 15px
 }
 .bloco3 h3 {
     font-size: 30px;
