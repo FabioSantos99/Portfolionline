@@ -9,14 +9,14 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #131313;
     color: #fff;
     overflow: visible;
 }
 
 .title h1 {
     font-size: 40px;
-    color: #4e4eee;
+    color: #12c809;
     font-variant: small-caps;
     padding-top: 20px;
     
@@ -26,11 +26,10 @@ body {
 /* CABEÇALHO */
 
 .container {
-    background-color: #050505;
+    background-color: #131313;
     display: flex;
     justify-content: space-around;
     position: fixed;
-    padding: 18px;
     z-index: 0;
     transition: .8s;
     width: 100%;
@@ -290,7 +289,6 @@ span {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 18px;
         z-index: 0;
         transition: .8s;
         width: 100%;
@@ -304,6 +302,8 @@ span {
 
     .mobile-menu-icon {
         display: block;
+        padding-top: 20px
+    ;
    }
 
   .mobile-menu-icon button {
