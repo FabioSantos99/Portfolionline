@@ -1,3 +1,70 @@
+const projectsList = [
+    {
+        id: 0,
+        nome: "Projeto Social",
+        link: "https://fabiosantos99.github.io/Projeto-Social/",
+        img: "projeto-social.png",
+        descricao: "Site criado com HTML e Css, simulando um smartphone com minhas redes sociais.",
+        tipo: "front-end"
+    },
+
+   {
+        id: 1,
+        nome: "Playlist",
+        link: "https://fabiosantos99.github.io/Interface-Musical/",
+        img: "playlist.png",
+        descricao: "Site playlist criado com framework Bootstrap e linguagem JavaScript e uso de LocalStorage para salvar dados.",
+        tipo: "front-end"
+    },
+
+    {
+        id: 2,
+        nome: "Conversor e Cofre",
+        link: "https://drive.google.com/drive/folders/1sraI6U4BmNrjxzgTHckwaN0wgZ_FT1N4?usp=sharing",
+        img: "tela_cofrinho.png",
+        descricao: "Projeto feito em Java, cofre e conversor em Euro e Dolar. Usado classes abstratas, heranças e polimorfismos e arrays",
+        tipo: "back-end"
+    },
+
+    {
+        id: 3,
+        nome: "QR Code Generator",
+        link: "https://fabiosantos99.github.io/QrCodeJs/",
+        img: "qr_image.png",
+        descricao: "Projeto gerador de qr code feito com linguagens HTML, CSS e Javascript",
+        tipo: "front-end"
+    },
+
+    {
+        id: 4,
+        nome: "Xadrez",
+        link: "",
+        img: "chess_image.png",
+        descricao: "Jogo de xadrez feito com os principais conceitos de Java: Lambda, Heranças, classes abstratas, arrays, try e catch. Veja o projeto clicando na imagem acima.",
+        tipo: "front-end"
+    },
+]
+
+const projectBody = document.getElementById("boxes");
+
+function bodyProject() {
+
+    projectBody.innerHTML = "";
+    for(let index = 0; index < projectsList.length; index++) {
+
+        projectBody.innerHTML += 
+
+        `<div class="project-div">
+            <div>
+            <h2>${projectsList[index].nome}</h2>
+            <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="projeto-social"></a>
+            </div>
+            <div>
+            <p>${projectsList[index].descricao}</p> 
+            </div>
+        </div> `
+    }
+}
 
 function menuShow() {
 
@@ -12,30 +79,4 @@ function menuShow() {
     }
 }
 
-var descricao;
-
-function acessarDesc(n) {
-
-    if (n == 1) {
-
-        descricao = "<p>Projeto feito com html e css. Login das minhas redes socias que aparecem na tela do celular ao clicar nos icones do lado esquerdo.</p> <a href='https://github.com/FabioSantos99/Projeto-Social' target='_blank' class = 'model'>Ver Código Fonte</a>"
-        document.getElementById('descricao').innerHTML = descricao;
-    } 
-     if (n == 2) {
-        descricao = "<p>Playlist musical feito com Bootstrap, HTML e Javascript, criado função para adicionar musica em uma playlist e função de buscar musica no cabeçalho</p> <a href='https://github.com/FabioSantos99/Interface-Musical' target='_blank' class = 'model'>Ver Código Fonte</a>"
-        document.getElementById('descricao2').innerHTML = descricao;
-
-    }
-    if (n == 3) {
-        descricao = "<p>Cofre que contem 3 moedas (real, euro e dolar cada uma possuindo uma lista diferente, com opção de converter todas as moedas em real e também remover valor anterior. Feito com Java</p> <a href='https://github.com/FabioSantos99/projeto_cofrinho' target='_blank' class = 'model'>Ver Código Fonte</a>"
-        document.getElementById('descricao3').innerHTML = descricao;
-    }
-
-    if (n == 4) {
-        descricao = "<p>Qr code criado com HTML, CSS e Javascript, gerando de links qr code</p> <a href='https://github.com/FabioSantos99/QrCodeJs' target='_blank' class = 'model'>Ver Código Fonte</a>"
-        document.getElementById('descricao4').innerHTML = descricao;
-    }
-}
-
-
-
+bodyProject();

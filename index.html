@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/suitcase.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Portfólio Online</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -64,17 +62,16 @@
         </div>
         
         <div>
-            <p>Olá, sou Fabio Santos Leite e sejam bem-vindos,
-            Estou no 2º semestre em Analise e Desenvolvimento de Sistemas e tenho outros cursos de certificados como PHP, Javascript, HTML/CSS e lógica de programação.</p>
-            <p>Hobbies de sempre que tanto amo são jogar video game nas horas livres, ler e ultimamente estou gostando bastante de aprender programação como criar softwares e sites esta sendo bastante divertido.</p>
-            <p>E estou em busca do meu primeiro emprego na área tecnológica fullstack e estou sempre disposto a aprender mais nessa função.</p>
+            <p>Olá, bem vindo ao meu Portfólio.</p>
+            <p>Meu nome é Fabio, tenho 30 anos e estou no 3º semestre em Análise e Desenvolvimento de Sistemas, e faço diversos cursos de certificados em programação como Javascript, Reactjs, PHP/Laravel, Java, Python e MySql.
+            E estou em busca da minha primeira vaga na área de tecnologia e informática.</p>
         </div>
     </div>
     </section>
 
     <!-- ----------FIM DE SOBRE MIM --------------- -->
 
-    <section class="content"  id="formacao">
+    <section class="content" id="formacao">
 
     <h1>Formação</h1>
 
@@ -84,13 +81,21 @@
        
         <br>
         <h2>Escola Estadual Angelo Bortolo</h2>
-        <p>Curso: Ensino Médio</p>
-        <p>Andamento: concluído</p>
-        <p>Ano de Conclusão: 2011</p>
-        <h2>Centro Universitário Internacional - Uninter</h2>
-        <p>Curso: Analise e Desenvolvimento de Sistemas</p>
-        <p>Andamento: cursando</p>
-        <p>Ano de Conclusão Previsão: 2025</p>
+        <ul>
+            <li>Curso: Ensino Médio</li>
+            <li>Andamento: concluído</li>
+            <li>Ano de Conclusão: 2011</li>
+        </ul>
+
+        <br>
+        <br>
+
+        <h2>Centro Universitário Internacional</h2>
+        <ul>
+            <li>Curso: Analise e Desenvolvimento de Sistemas (Ensino Superior)</li>
+            <li>Andamento: cursando</li>
+            <li>Ano de Conclusão Previsão: 2025</li>
+        </ul>
     </div> <!--Dados de formação-->
 
     <div>
@@ -100,56 +105,17 @@
 </div> <!--Bloco 2-->
     </section>
 
-
     <!-- MEUS PROJETOS INICIO -->
 
     <section id="meus_projetos">
         <h1>Meus Projetos</h1>
-            <div class="boxes">
-                <div> 
-                    <div>
-                        <h2>Projeto Social</h2>
-                        <a href="https://fabiosantos99.github.io/Projeto-Social/" target="_blank"><img src="./img/projeto-social.png" alt="projeto-social"></a>
-                    </div>
-                   
-                    <div>
-                        <button  onclick="acessarDesc(1)">Descrição</button>
-                        <div id="descricao"> </div>
-                    </div>
-                </div> <!-- Primeiro Projeto-->
 
-                <div>
-                    <h2>Playlist</h2>
-               
-                    <a href="https://fabiosantos99.github.io/Interface-Musical/" target="_blank"><img src="./img/playlist.png" alt="playlist"></a>
-                <div>
-                        <button  onclick="acessarDesc(2)">Descrição</button>
-                        <div id="descricao2"></div>
-                    </div>
-                </div> <!-- Segundo Projeto-->
+            <div id="boxes">
+            </div>
 
-                <div>
-                    <h2>Cofre e Conversor</h2>
-                    <div class="position">
-                        <a href="https://drive.google.com/drive/folders/1sraI6U4BmNrjxzgTHckwaN0wgZ_FT1N4?usp=sharing" target="_blank"><img src="./img/tela_cofrinho.png" alt="cofre" target="_blank"></a></div>
-                    <div>
-                        <button onclick="acessarDesc(3)">Descrição</button>
-                        <div id="descricao3"></div>
-                    </div>
-                </div> <!-- Terceiro Projeto-->
+        </section>
 
-                <div>
-                    <h2>QR Code Generator</h2>
-                    <a href="https://fabiosantos99.github.io/QrCodeJs/" target="_blank"><img src="./img/qr_image.png" alt="qrcode"></a>
-                    <div>
-                        <button onclick="acessarDesc(4)">Descrição</button>
-                        <div id="descricao4"></div>
-                    </div> <!-- Quarto Projeto-->
-            
-                </div>
-            </section>
-
-            <!------------- FIM DE MEUS PROJETOS ---------- -->
+        <!------------- FIM DE MEUS PROJETOS ---------- -->
 
             <!-- Contatos -->
             
@@ -183,6 +149,6 @@
     </section>
 <!-- -------- FIM DE CONTATOS ------------- -->
    
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html

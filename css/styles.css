@@ -1,11 +1,10 @@
 /* GERAL */
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto';
-    font-weight: 800;
+    font-weight: 600;
 }
 
 body {
@@ -18,13 +17,19 @@ body {
     font-size: 40px;
     color: #12c809;
     font-variant: small-caps;
-    padding-top: 20px;
-    
+    padding-top: 20px; 
 }
 
+#sobre h1,
+#meus_projetos h1,
+#formacao h1,
+#contato h1 {
+    color: #11ea06;
+    font-size: 30px;
+    font-weight: bolder;
+}
 
 /* CABEÇALHO */
-
 .container {
     background-color: #131313;
     display: flex;
@@ -39,19 +44,14 @@ body {
     background-color: #0e0e0e;
  }
 
-
  .mobile-menu-icon {
 
     display: none;
 }
 
 .mobile-menu {
-
     display: none;
-
 }
-
-
 
  .menu {
     display: flex;
@@ -66,18 +66,16 @@ body {
     text-decoration: none;
     font-size: 22px;
     color: #fff;
-    text-shadow: 1px 1px#37cbfc;
     transition: .5s;
+    font-weight: bolder;
  }
 
  .menu a:hover {
-    box-shadow: 6px 6px 6px 6px #4e4eee;
-    color: #000000;
-
+    box-shadow: 6px 6px 6px #03e203;
  }
 
  .downloads {
-    background-color: #4e4eee;
+    background-color: #03e203;
     transition: .5s;
  }
 
@@ -90,14 +88,12 @@ body {
     text-decoration: none;
 }
 
-
-.menu li{
+.menu li {
    float: left;
    padding: 0 54px;
 }
 
 /* Box Menu Responsivo */
-
 .box-menu {
     display: none;
 }
@@ -108,9 +104,7 @@ body {
     padding-top: 200px;
 }
 
-
 /* SOBRE MIM */
-
 .bloco1 {
     display: flex;
     flex-direction: row;
@@ -129,13 +123,11 @@ body {
     width: 750px;
 }
 
-
 /* FORMAÇÃO */
-
 .bloco2 {
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    gap: 110px;
     padding-top: 50px;
 }
 
@@ -144,7 +136,7 @@ body {
 }
 
 .bloco2 h2 {
-    font-size: 26px;
+    font-size: 23px;
 }
 
 .bloco2 p, h2{
@@ -153,7 +145,7 @@ body {
 }
 
 .bloco2 img {
-    width: 60%;
+    width: 40%;
 }
 
 /* MEUS PROJETOS */
@@ -166,6 +158,7 @@ body {
 
 #meus_projetos h1 {
     padding-left: 80px;
+    padding-bottom: 30px;
 
 }
 
@@ -174,33 +167,45 @@ body {
     flex-wrap: wrap;
     gap: 40px;
     padding-top: 50px;
-
-
 }
 
-.boxes div {
+#boxes {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 60px;
     width: 400px;
     height: fit-content;
     transition: .5s;
+}
+
+.project-div {
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+    background-color: #0d0d0f;
+
 
 }
 
-.boxes img {
-    width: 350px;
-    height: 300px;
+ .project-div:hover {
+    background-color: #050505;
+}
+
+
+#boxes img {
+    width: 300px;
+    height: 250px;
     transition: .2s;
 }
 
-.boxes img:hover {
-    opacity: .2;
-    transform: scale(1.05);
+#boxes img:hover {
+    opacity: .5;
 }
 
-
-.boxes button {
+#boxes button {
     background-color: #1ccc1c;
     width: fit-content;
     border: none;
@@ -213,24 +218,8 @@ body {
     font-size: large;
 }
 
-#descricao, #descricao2,
-#descricao3, #descricao4 {
-    margin: 20px;
-    width: 300px;
-    text-align: center;
-}
-
-#descricao, #descricao2,
-#descricao3, #descricao4 a {
-    text-decoration: none;
-}
-
-.model {
-    text-decoration:none;
-    color: #1ccc1c;
-    padding: 3px;
-    margin-top: 10px;
-    font-weight: 800;
+#boxes p {
+    padding-top: 10px;
 }
 
 /* CONTATO */
@@ -252,7 +241,6 @@ body {
     width: 400px
 }
 
-
 .bloco3 #redes {
     width: 70px;
     border-radius: 50%;
@@ -264,25 +252,19 @@ body {
 .bloco3 #redes:hover {
 
     transform: scaleY(1.5);
-
-
 }
+
 .bloco3 h3 {
     font-size: 30px;
     line-height: 2em;
 }
 
 span {
-    color: rgb(3, 226, 3);
+    color: #03e203;
 }
 
-
-
-
-/*------------------ RESPONSIVIDADE------------------------ */
-
+/*--------RESPONSIVIDADE--------------*/
 @media screen and (max-width: 720px) {
-
 
     .container {
         background-color: #050505;
@@ -302,16 +284,14 @@ span {
 
     .mobile-menu-icon {
         display: block;
-        padding-top: 20px
-    ;
+        padding-top: 20px;
    }
 
-  .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        }
 
     .box-menu ul {
         display: flex;
@@ -319,7 +299,6 @@ span {
         text-align: center;
         padding-bottom: 1rem;
         background-color: rgba(0, 0, 0, 0.718);
-
     }
 
     .box-menu a {
@@ -338,22 +317,17 @@ span {
         border-radius: 5px;
     }
 
-
     .login-button a{
-
         background-color: #048ab6;
         padding-top: 10px;
-
     }
 
     .login-button a:hover{
-
         background-color: #fff;
         color: #048ab6;
-
     }
-    .open {
-                
+    
+    .open {      
         display: block;
     }
 
@@ -368,85 +342,88 @@ span {
         position: fixed;
         top: 70px;
     }
-/* SOBRE MIM */
+    /* SOBRE MIM */
 
-.content {
-    padding-left: 30px;
-    padding-top: 100px;
-}
+    .content {
+        padding-left: 30px;
+        padding-top: 100px;
+    }
 
-.bloco1 {
-    display: flex;
-    flex-direction: column;
-    font-size: 28px;
-    line-height: 1.5em;
-    padding-top: 30px;
-}
+    .bloco1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        line-height: 1.5em;
+        padding-top: 30px;
+    }
 
-.bloco1 img {
-    width: 90%;
-}
+    .bloco1 img {
+        width: 90%;
+    }
 
-.bloco1 p::first-letter {
-    content: '';
-    font-size: 35px;
-}
+    .bloco1 p::first-letter {
+        content: '';
+        font-size: 35px;
+    }
 
-.bloco1 div:nth-child(2) {
-    width: 350px;
-}
+    .bloco1 div:nth-child(2) {
+        width: 350px;
+    }
 
-/* FORMAÇÃO */
+    /* FORMAÇÃO */
 
-.bloco2 {
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-}
+    .bloco2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
 
-.bloco2 img {
-    width: 80%;
-    margin: auto;
-}
+    .bloco2 img {
+        width: 80%;
+        margin: auto;
+    }
 
-/* Meus Projetos */
-#meus_projetos {
-    padding-left: 0px;
-    padding-top: 200px;
+    /* Meus Projetos */
+    #meus_projetos {
+        padding-left: 10px;
+        padding-top: 200px;
+    }
 
-}
+    #boxes {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+    }
 
-/* CONTATO */
+    /* CONTATO */
+    .bloco3 {
+        display: inline;
+        padding: 20px;
+    }
 
-.bloco3 {
-    display: inline;
-    padding: 20px;
-}
+    .bloco3 div {
+        width: 300px;
+    }
+    .bloco3 div:nth-child(2) {
+        padding-top: 100px;
+    }
 
-.bloco3 div {
-    width: 300px;
-}
-.bloco3 div:nth-child(2) {
-    padding-top: 100px;
-}
+    .bloco3 #logo_contato {
+        width: 400px
+    }
 
-.bloco3 #logo_contato {
-    width: 400px
-}
+    .bloco3 #redes {
+        width: 60px;
+        border-radius: 50%;
+        float: inline-start;
+      
+    }
+    .bloco3 h3 {
+        font-size: 30px;
+        line-height: 2em;
+    }
 
-.bloco3 #redes {
-    width: 60px;
-    border-radius: 50%;
-    float: inline-start;
-    padding: 15px
-}
-.bloco3 h3 {
-    font-size: 30px;
-    line-height: 2em;
-}
-
-span {
-    color: rgb(3, 226, 3);
-}
-
+    span {
+        color: rgb(3, 226, 3);
+    }
 }
