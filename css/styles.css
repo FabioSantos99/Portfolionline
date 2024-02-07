@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: space-around;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     transition: .8s;
     width: 100%;
 }
@@ -162,7 +162,7 @@ body {
 
 }
 
-#meus_projetos .boxes {
+#meus_projetos {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -171,13 +171,49 @@ body {
 
 #boxes {
     display: flex;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
     flex-wrap: nowrap;
+    padding: 6rem;
     gap: 60px;
-    width: 400px;
-    height: fit-content;
+    height: 500px;
+    width: 1280px;
     transition: .5s;
+    overflow-y: hidden;
+}
+
+.wrapper {
+    position: relative;
+}
+
+
+ .arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 10;
+  right: auto;
+  bottom: 0;
+  font-size: 30px;
+  line-height: 250px;
+  width: 40px;
+  color: #11ea06;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 0%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: 10;
+  background: linear-gradient(to right, black 200%);
 }
 
 .project-div {
@@ -186,8 +222,6 @@ body {
     border-radius: 10px;
     transition: .5s;
     background-color: #0d0d0f;
-
-
 }
 
  .project-div:hover {
@@ -271,7 +305,7 @@ span {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        z-index: 0;
+        z-index: 1;
         transition: .8s;
         width: 100%;
     }
@@ -306,7 +340,7 @@ span {
         text-decoration: none;
         font-size: 29px;
         color: #fff;
-        text-shadow: 1px 1px#37cbfc;
+        text-shadow: 1px 1px #11ea06;
         transition: .5s;
         padding: 10px;
         line-height: 1.6em;
@@ -318,13 +352,13 @@ span {
     }
 
     .login-button a{
-        background-color: #048ab6;
+        background-color: #11ea06;
         padding-top: 10px;
     }
 
     .login-button a:hover{
         background-color: #fff;
-        color: #048ab6;
+        color: #11ea06;
     }
     
     .open {      
@@ -391,8 +425,9 @@ span {
 
     #boxes {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding-left: 40px;
+        width: 480px;
     }
 
     /* CONTATO */
