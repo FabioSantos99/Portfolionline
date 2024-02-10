@@ -47,45 +47,11 @@ const projectsList = [
 
 const projectBody = document.getElementById("boxes");
 const wrapper = document.querySelector(".wrapper");
-
-const controls = document.querySelectorAll('.control');
+const controls = document.querySelectorAll(".control");
 
 let currentItem = 0;
-const items = document.querySelectorAll(".project-div");
+const maxItens = projectsList.length;
 
-const maxItems = projectsList.length;
-
-controls.forEach(control => {
-    control.addEventListener('click', () => {
-        const isLeft = control.classList.contains('arrow-left')
-
-        if (isLeft) {
-            currentItem -= 1;
-        } else {
-            currentItem += 1;
-        }
-
-        if (currentItem >= maxItems) {
-            currentItem = 0;
-        }
-
-        if (currentItem >= maxItems) {
-            currentItem = 0;
-        }
-
-        if (currentItem < 0) {
-            currentItem = maxItems - 1;
-        }
-
-        items.forEach((item) => item.classList.remove("current-item"));
-
-        items[currentItem].scrollIntoView({
-            behavior: "smooth",
-            inline: "center"
-        })
-        items[currentItem].classList.add("current-item");
-    })
-})
 
 function bodyProject() {
 
@@ -94,7 +60,7 @@ function bodyProject() {
 
         projectBody.innerHTML += 
         `
-        <div class="project-div current-item">
+        <div class="project-div item">
             <div>
             <h2>${projectsList[index].nome}</h2>
             <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="projeto-social"></a>

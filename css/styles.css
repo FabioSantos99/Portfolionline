@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #131313;
+    background-color: #1a1919;
     color: #fff;
     overflow: visible;
 }
@@ -31,7 +31,7 @@ body {
 
 /* CABEÇALHO */
 .container {
-    background-color: #131313;
+    background-color: #1a1919;
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -186,34 +186,33 @@ body {
     position: relative;
 }
 
-
- .arrow-left,
-.arrow-right {
-  position: absolute;
-  top: 0;
-  left: 10;
-  right: auto;
-  bottom: 0;
-  font-size: 30px;
-  line-height: 250px;
-  width: 40px;
-  color: #11ea06;
-  transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 0%, black 0%);
-  opacity: 0.1;
-  cursor: pointer;
-  border: none;
+.wrapper button {
+    background-color: transparent;
+    border: none;
 }
 
-.arrow-left:hover,
-.arrow-right:hover {
+.wrapper i {
+    color: #fff;
+    font-size: 100px;
+    opacity: 0.1;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.wrapper i:hover {
     opacity: 1;
 }
 
-.arrow-right {
-  right: 0;
-  left: 10;
-  background: linear-gradient(to right, black 200%);
+.left {
+    position: absolute;
+    left: 15px;
+    top: 200px;
+}
+
+.right {
+    position: absolute;
+    right :5px;
+    top: 200px;
 }
 
 .project-div {
@@ -239,19 +238,6 @@ body {
     opacity: .5;
 }
 
-#boxes button {
-    background-color: #1ccc1c;
-    width: fit-content;
-    border: none;
-    padding: 5px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-    color: #fff;
-    font-weight: bold;
-    font-size: large;
-}
-
 #boxes p {
     padding-top: 10px;
 }
@@ -267,6 +253,7 @@ body {
 .bloco3 div {
     width: 600px;
 }
+
 .bloco3 div:nth-child(2) {
     padding-top: 150px;
 }
@@ -370,7 +357,6 @@ span {
     }
 
     .box-menu {
-
         width: fit-content;
         height: fit-content;
         position: fixed;
