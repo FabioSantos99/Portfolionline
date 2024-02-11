@@ -58,11 +58,9 @@ function bodyProject() {
         <div class="card project-div">
             <div>
             <h2>${projectsList[index].nome}</h2>
-            <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="projeto-social"></a>
+            <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="projeto-social"><span class="access">Acessar <i class="bi bi-box-arrow-up-right"></i> </span></a>
             </div>
-            <div>
-            <p>${projectsList[index].descricao}</p> 
-            </div>
+            <p>${projectsList[index].descricao}</p>
         </div>`
     }
 }
@@ -82,17 +80,50 @@ function menuShow() {
           document.querySelector('.icon').src = "img/close.png"
     }
     
+    const aboutClick = document.querySelector(".about-link").addEventListener("click", () => {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "img/ui.png"
+        return aboutClick;
+
+    })
+
+    const formClick = document.querySelector(".form-link").addEventListener("click", () => {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "img/ui.png"
+
+    })
+
+    const projClick = document.querySelector(".proj-link").addEventListener("click", () => {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "img/ui.png"
+
+    })
+
+    const contClick = document.querySelector(".cont-link").addEventListener("click", () => {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "img/ui.png"
+
+    })
+
+    const downloadClick = document.querySelector(".downloadRes").addEventListener("click", () => {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "img/ui.png"
+
+    })
     
 }
 
 // carousel
 const rightButton = document.querySelector(".right");
 const leftButton = document.querySelector(".left");
+var scrollAmount = 0;
+var scrollMin = 0
+var scrollMax = 400;
 
 rightButton.onclick = () => {
     document.querySelector("#boxes").scrollTo({
         top: 0,
-        left: 800,
+        left: Math.max(scrollAmount += 400, scrollMax),
         behavior: 'smooth',
     });
 }
@@ -100,7 +131,7 @@ rightButton.onclick = () => {
 leftButton.onclick = () => {
     document.querySelector("#boxes").scrollTo({
         top: 0,
-        left: 0,
+        left: Math.min(scrollAmount -= 400, scrollMin),
         behavior: 'smooth',
     });
 }

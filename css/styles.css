@@ -191,13 +191,14 @@ body {
 .wrapper button {
     background-color: transparent;
     border: none;
+    z-index: 3;
 }
 
-.wrapper i {
+.wrapper > button > i {
     color: #fff;
     font-size: 100px;
-    opacity: 0.1;
     transition: .6s;
+    opacity: 0.1;
     cursor: pointer;
 }
 
@@ -218,11 +219,13 @@ body {
 }
 
 .project-div {
+    position: relative;
     height: 400px;
     padding: 10px;
     border-radius: 10px;
     transition: .5s;
     background-color: #0d0d0f;
+    z-index: 1;
 }
 
  .project-div:hover {
@@ -236,12 +239,27 @@ body {
     transition: .2s;
 }
 
-#boxes img:hover {
-    opacity: .5;
-}
 
 #boxes p {
     padding-top: 10px;
+}
+
+ .access {
+    position: absolute;
+    right: 10px;
+    width: 300px;
+    height: 250px;
+    background-color: transparent;
+    color: transparent;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: 0.5s;
+
+}
+
+.access:hover {
+    background-color: #05050556;
+    color: #04fa04;
 }
 
 /* This is from w3schools */
@@ -445,11 +463,11 @@ span {
     }
 
     .project-div {
-        z-index: 222;
+        z-index: 3;
     }
 
     .wrapper button {
-        z-index: 223;
+        z-index: 22;
     }
 
     /* CONTATO */
