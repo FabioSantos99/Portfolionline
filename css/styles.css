@@ -47,6 +47,7 @@ body {
  .mobile-menu-icon {
 
     display: none;
+
 }
 
 .mobile-menu {
@@ -347,9 +348,6 @@ span {
         border: none;
         cursor: pointer;
         }
-
-    
-
    
     .box-menu ul {
         display: flex;
@@ -359,7 +357,6 @@ span {
         text-align: center;
         background-color: rgba(0, 0, 0, 0.897);
         border-radius: 10px;
-
     }
 
     .box-menu li { 
