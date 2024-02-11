@@ -47,11 +47,6 @@ const projectsList = [
 
 const projectBody = document.getElementById("boxes");
 const wrapper = document.querySelector(".wrapper");
-const controls = document.querySelectorAll(".control");
-
-let currentItem = 0;
-const maxItens = projectsList.length;
-
 
 function bodyProject() {
 
@@ -60,7 +55,7 @@ function bodyProject() {
 
         projectBody.innerHTML += 
         `
-        <div class="project-div item">
+        <div class="card project-div">
             <div>
             <h2>${projectsList[index].nome}</h2>
             <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="projeto-social"></a>
@@ -72,6 +67,7 @@ function bodyProject() {
     }
 }
 
+// Menu Responsivo
 function menuShow() {
 
     let menuMobile = document.querySelector('.box-menu');
@@ -79,10 +75,36 @@ function menuShow() {
     if (menuMobile.classList.contains('open')) {
           menuMobile.classList.remove('open');
           document.querySelector('.icon').src = "img/ui.png"
+
+        
     } else {
           menuMobile.classList.add('open');
           document.querySelector('.icon').src = "img/close.png"
     }
+    
+    
 }
 
+// carousel
+const rightButton = document.querySelector(".right");
+const leftButton = document.querySelector(".left");
+
+rightButton.onclick = () => {
+    document.querySelector("#boxes").scrollTo({
+        top: 0,
+        left: 800,
+        behavior: 'smooth',
+    });
+}
+
+leftButton.onclick = () => {
+    document.querySelector("#boxes").scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+    });
+}
+
+
 bodyProject();
+
