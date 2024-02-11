@@ -254,11 +254,10 @@ body {
     font-size: 30px;
     font-weight: bolder;
     transition: 0.5s;
-
 }
 
 .access:hover {
-    background-color: #05050556;
+    background-color: #0505059c;
     color: #04fa04;
 }
 
@@ -497,7 +496,7 @@ span {
         font-size: 30px;
         line-height: 2em;
     }
-
+    
     span {
         color: rgb(3, 226, 3);
     }
