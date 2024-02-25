@@ -5,6 +5,7 @@ const projectsList = [
         link: "https://fabiosantos99.github.io/Projeto-Social/",
         img: "projeto-social.png",
         descricao: "Site criado com HTML e Css, simulando um smartphone com minhas redes sociais.",
+        code:'https://github.com/FabioSantos99/Projeto-Social',
         tipo: "front-end"
     },
 
@@ -14,6 +15,7 @@ const projectsList = [
         link: "https://fabiosantos99.github.io/Interface-Musical/",
         img: "playlist.png",
         descricao: "Site playlist criado com framework Bootstrap e linguagem JavaScript e uso de LocalStorage para salvar dados.",
+        code:'https://github.com/FabioSantos99/Interface-Musical',
         tipo: "front-end"
     },
 
@@ -23,6 +25,7 @@ const projectsList = [
         link: "https://drive.google.com/drive/folders/1sraI6U4BmNrjxzgTHckwaN0wgZ_FT1N4?usp=sharing",
         img: "tela_cofrinho.png",
         descricao: "Projeto feito em Java, cofre e conversor em Euro e Dolar. Usado classes abstratas, heranças e polimorfismos e arrays",
+        code:'https://github.com/FabioSantos99/projeto_cofrinho',
         tipo: "back-end"
     },
 
@@ -32,6 +35,7 @@ const projectsList = [
         link: "https://fabiosantos99.github.io/QrCodeJs/",
         img: "qr_image.png",
         descricao: "Projeto gerador de qr code feito com linguagens HTML, CSS e Javascript",
+        code:'https://github.com/FabioSantos99/QrCodeJs',
         tipo: "front-end"
     },
 
@@ -41,6 +45,17 @@ const projectsList = [
         link: "https://fabiosantos99.github.io/Projetos_Back-End/",
         img: "chess_image.png",
         descricao: "Jogo de xadrez feito com os principais conceitos de Java: Lambda, Heranças, classes abstratas, arrays, try e catch. Veja o projeto clicando na imagem acima.",
+        code:'https://github.com/FabioSantos99/chess-system-java/tree/master',
+        tipo: "back-end"
+    },
+
+    {
+        id: 5,
+        nome: "Stock Controller",
+        link: "https://fabiosantos99.github.io/Stock-Controlller-Js/",
+        img: "stock.png",
+        descricao: "Controle de estoque de loja de eletrônicos, opções de incluir e excluir dados, atualizando sempre o LocalStorage. Feito com Javascript",
+        code:'https://github.com/FabioSantos99/Stock-Controlller-Js',
         tipo: "back-end"
     },
 ]
@@ -57,10 +72,12 @@ function bodyProject() {
         `
         <div class="card project-div">
             <div>
-            <h2>${projectsList[index].nome}</h2>
+            <h2>${projectsList[index].nome}
+            </h2>
             <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="projeto-social"><span class="access">Acessar <i class="bi bi-box-arrow-up-right"></i> </span></a>
             </div>
             <p>${projectsList[index].descricao}</p>
+            <span><a href="${projectsList[index].code}" class="code" target="_blank">Ver Código</a></span>
         </div>`
     }
 }
@@ -135,7 +152,6 @@ leftButton.onclick = () => {
         behavior: 'smooth',
     });
 }
-
 
 bodyProject();
 
