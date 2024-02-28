@@ -55,8 +55,8 @@ const projectsList = [
         link: "https://fabiosantos99.github.io/Stock-Controlller-Js/",
         img: "stock.png",
         descricao: "Controle de estoque de loja de eletrônicos, opções de incluir e excluir dados, atualizando sempre o LocalStorage. Feito com Javascript",
-        code:'https://github.com/FabioSantos99/Stock-Controlller-Js',
-        tipo: "back-end"
+        code:'https://github.com/FabioSantos99/stock_controller_vite',
+        tipo: "front-end"
     },
 ]
 
