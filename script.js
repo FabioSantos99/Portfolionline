@@ -58,6 +58,16 @@ const projectsList = [
         code:'https://github.com/FabioSantos99/Stock_Controller_Vite',
         tipo: "front-end"
     },
+
+    {
+        id: 6,
+        nome: "Phone E-Commerce",
+        link: "https://phoneshopping.online/",
+        img: "phoneecommerce.png",
+        descricao: "Site E_commerce feito com Js, Vite e Bootstrap, compras do carrinho e venda registrado salvo no LocalStorage",
+        code:'https://github.com/FabioSantos99/phone_ecommerce',
+        tipo: "front-end"
+    }
 ]
 
 const projectBody = document.getElementById("boxes");
