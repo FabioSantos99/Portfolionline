@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Lato';
     font-weight: 600;
 }
 
@@ -225,7 +225,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     transition: .5s;
-    background-color: #0d0d0f;
+    background-color: #141414;
     z-index: 1;
 }
 

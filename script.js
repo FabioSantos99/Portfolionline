@@ -70,6 +70,7 @@ const projectsList = [
     }
 ]
 
+projectsList.reverse();
 const projectBody = document.getElementById("boxes");
 const wrapper = document.querySelector(".wrapper");
 
