@@ -52,7 +52,7 @@ const projectsList = [
     {
         id: 5,
         nome: "Stock Controller",
-        link: "https://fabiosantos99.github.io/stock_controller_vite/",
+        link: "https://fabiosantos99.github.io/stock_vite/",
         img: "stock.png",
         descricao: "Controle de estoque de loja de eletrônicos, opções de incluir e excluir dados, atualizando sempre o LocalStorage. Feito com Javascript",
         code:'https://github.com/FabioSantos99/Stock_Controller_Vite',
