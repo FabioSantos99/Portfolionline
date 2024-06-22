@@ -57,17 +57,17 @@ const projectsList = [
         descricao: "Controle de estoque de loja de eletrônicos, opções de incluir e excluir dados, atualizando sempre o LocalStorage. Feito com Javascript",
         code:'https://github.com/FabioSantos99/stock_vite',
         tipo: "front-end"
-    },
-
-    {
-        id: 6,
-        nome: "Phone E-Commerce",
-        link: "https://phoneshopping.online/",
-        img: "phoneecommerce.png",
-        descricao: "Site E_commerce feito com Js, Vite e Bootstrap, compras do carrinho e venda registrado salvo no LocalStorage",
-        code:'https://github.com/FabioSantos99/phone_ecommerce',
-        tipo: "front-end"
     }
+
+    // {
+    //     id: 6,
+    //     nome: "Phone E-Commerce",
+    //     link: "https://phoneshopping.online/",
+    //     img: "phoneecommerce.png",
+    //     descricao: "Site E_commerce feito com Js, Vite e Bootstrap, compras do carrinho e venda registrado salvo no LocalStorage",
+    //     code:'https://github.com/FabioSantos99/phone_ecommerce',
+    //     tipo: "front-end"
+    // }
 ]
 
 projectsList.reverse();
