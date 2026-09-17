@@ -3,14 +3,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Lato';
+    font-family: 'DM Sans', sans-serif;
     font-weight: 600;
 }
 
 body {
     background-color: #1a1919;
     color: #fff;
-    overflow: visible;
 }
 
 .title h1 {
@@ -18,6 +17,7 @@ body {
     color: #12c809;
     font-variant: small-caps;
     padding-top: 20px; 
+    letter-spacing: 1.5px;
 }
 
 #sobre h1,
@@ -41,13 +41,11 @@ body {
 }
 
 .container:hover {
-    background-color: #0e0e0e;
+    background: #0e0e0e;
  }
 
  .mobile-menu-icon {
-
     display: none;
-
 }
 
 .mobile-menu {
@@ -58,7 +56,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    /* menu. nav/link */
  }
 
  .menu a {
@@ -72,7 +69,7 @@ body {
  }
 
  .menu a:hover {
-    box-shadow: 6px 6px 6px #03e203;
+    box-shadow: 6px 6px 6px rgb(3, 226, 3);
  }
 
  .downloads {
@@ -103,8 +100,18 @@ body {
 
 /* Espaçamento de todas os blocos sections */
 .content {
-    padding-left: 200px;
+    padding: 100px 8vw 80px;
+    margin-bottom: 40px;
+}
+
+#sobre.content {
     padding-top: 200px;
+    ;
+}
+
+#formacao,
+#contato {
+    background-color: #131212;
 }
 
 /* SOBRE MIM */
@@ -131,7 +138,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 110px;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .bloco2 p {
@@ -154,22 +161,16 @@ body {
 /* MEUS PROJETOS */
 
 #meus_projetos {
-    padding-left: 120px;
-    padding-top: 200px;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    padding: 100px 8vw 80px 3vw;
+    margin-bottom: 40px;
 }
 
 #meus_projetos h1 {
     padding-left: 80px;
     padding-bottom: 30px;
-
-}
-
-#meus_projetos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding-top: 50px;
 }
 
 #boxes {
@@ -180,7 +181,7 @@ body {
     padding: 6rem;
     gap: 60px;
     height: 500px;
-    width: 1280px;
+    width: 1620px;
     transition: .5s;
     overflow-x: scroll;
 }
@@ -215,7 +216,7 @@ body {
 
 .right {
     position: absolute;
-    right :5px;
+    right: 5px;
     top: 200px;
 }
 

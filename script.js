@@ -83,12 +83,12 @@ function bodyProject() {
         `
         <div class="card project-div">
             <div>
-            <h2>${projectsList[index].nome}
-            </h2>
-            <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="projeto-social"><span class="access">Acessar <i class="bi bi-box-arrow-up-right"></i> </span></a>
+                <h2>${projectsList[index].nome}
+                </h2>
+                <a href="${projectsList[index].link}" target="_blank"><img src="./img/${projectsList[index].img}" alt="${projectsList[index].nome}"><span class="Acessar <i class="bi bi-box-arrow-up-right"></i> </span></a>
             </div>
-            <p>${projectsList[index].descricao}</p>
-            <span><a href="${projectsList[index].code}" class="code" target="_blank">Ver Código</a></span>
+                <p>${projectsList[index].descricao}</p>
+                <span><a href="${projectsList[index].code}" class="code" target="_blank"> Ver Código</a></span>
         </div>`
     }
 }
@@ -101,68 +101,53 @@ function menuShow() {
     if (menuMobile.classList.contains('open')) {
           menuMobile.classList.remove('open');
           document.querySelector('.icon').src = "img/ui.png"
-
-        
+  
     } else {
           menuMobile.classList.add('open');
           document.querySelector('.icon').src = "img/close.png"
     }
-    
-    const aboutClick = document.querySelector(".about-link").addEventListener("click", () => {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/ui.png"
-        return aboutClick;
-
-    })
-
-    const formClick = document.querySelector(".form-link").addEventListener("click", () => {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/ui.png"
-
-    })
-
-    const projClick = document.querySelector(".proj-link").addEventListener("click", () => {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/ui.png"
-
-    })
-
-    const contClick = document.querySelector(".cont-link").addEventListener("click", () => {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/ui.png"
-
-    })
-
-    const downloadClick = document.querySelector(".downloadRes").addEventListener("click", () => {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/ui.png"
-
-    })
-    
+     
 }
+
+function fecharMenuMobile() {
+    document.querySelector('.box-menu').classList.remove('open');
+    document.querySelector('.icon').src = "img/ui.png";
+}
+
+document.querySelector(".about-link").addEventListener("click", fecharMenuMobile);
+document.querySelector(".form-link").addEventListener("click", fecharMenuMobile);
+document.querySelector(".proj-link").addEventListener("click", fecharMenuMobile);
+document.querySelector(".cont-link").addEventListener("click", fecharMenuMobile);
+document.querySelector(".downloadRes").addEventListener("click", fecharMenuMobile);
 
 // carousel
+const boxes = document.querySelector("#boxes");
 const rightButton = document.querySelector(".right");
 const leftButton = document.querySelector(".left");
-var scrollAmount = 0;
-var scrollMin = 0
-var scrollMax = 400;
+const scrollStep = 360;
+
+function getScrollStep() {
+    const firstCard = boxes.querySelector(".project-div");
+    const gap = parseInt(getComputedStyle(boxes).gap) || 0;
+    return firstCard ? firstCard.offsetWidth + gap : 360; 
+}
 
 rightButton.onclick = () => {
-    document.querySelector("#boxes").scrollTo({
-        top: 0,
-        left: Math.max(scrollAmount += 400, scrollMax),
+    
+    const maxScroll = boxes.scrollWidth - boxes.clientWidth;
+    const newScroll = Math.min(boxes.scrollLeft + scrollStep, maxScroll);
+    boxes.scrollTo({
+        left: newScroll,
         behavior: 'smooth',
     });
-}
+};
 
 leftButton.onclick = () => {
-    document.querySelector("#boxes").scrollTo({
-        top: 0,
-        left: Math.min(scrollAmount -= 400, scrollMin),
+    const newScroll = Math.max(boxes.scrollLeft - scrollStep, 0);
+    boxes.scrollTo({
+        left: newScroll,
         behavior: 'smooth',
     });
-}
+};
 
 bodyProject();
-
