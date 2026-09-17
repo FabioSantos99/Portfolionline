@@ -54,7 +54,7 @@ const projectsList = [
         nome: "Inventory",
         link: "https://inventory-one-gules.vercel.app/",
         img: "inventory.png",
-        descricao: "Controle de estoque de loja de eletrônicos, opções de incluir e excluir dados, atualizando produtos, adicionando usuarios, com banco de dados postgres",
+        descricao: "Controle de estoque de loja de eletrônicos, opções de incluir e excluir dados, atualizando produtos, adicionando usuarios, com banco de dados postgreSQL",
         code:'https://github.com/FabioSantos99/inventory',
         tipo: "full-stack"
     }
