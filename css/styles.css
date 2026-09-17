@@ -222,6 +222,8 @@ body {
 
 .project-div {
     position: relative;
+    font-size: 15px;
+    font-variant: small-caps;
     height: 430px;
     padding: 10px;
     border-radius: 10px;
